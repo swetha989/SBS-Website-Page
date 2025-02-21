@@ -2,10 +2,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Settings, Building2, Users } from "lucide-react"
-
+import Footer from "@/components/ui/footer"
 export default function Page() {
   return (
-    <main className="min-h-screen bg-[#bee4f3]">
+    <main className="min-h-screen bg-[#b7e1f1]">
       {/* Company Overview Section */}
       <section className="container mx-auto px-4 py-12 md:py-16">
         <div className="grid gap-8 lg:grid-cols-2 lg:gap-12 items-center">
@@ -141,7 +141,7 @@ It is our long-term policy to ensure qualitative and quantitative growth of our 
               </div>
               <div className="relative aspect-video lg:aspect-auto">
                 <Image
-                  src="/pattern-3.png"
+                  src="/pattern-3.jpg"
                   alt="Target practice"
                   fill
                   className="object-cover"

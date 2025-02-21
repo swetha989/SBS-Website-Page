@@ -40,7 +40,7 @@ const Navbar = () => {
       <div className="flex items-center justify-between h-16">
         <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-gray-800"><Image src="/sbs-logo.png" width={80} height={40} alt="SBS" objectFit='cover' /></Link>
+              <Link href="/" className="text-2xl font-bold text-gray-800"><Image src="/sbs-logo.jpg" width={73} height={73} alt="SBS" objectFit='cover' /></Link>
             </div>
             <div className="items-center justify-center w-full hidden md:flex">
               <div className="ml-10 flex items-baseline space-x-4">
