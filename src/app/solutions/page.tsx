@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
+import SolutionsPage from '../../components/ui/SolutionsPage';
 
-function SolutionsPage() {
+const Solutions: React.FC = () => {
   return (
-    <div>SolutionsPage</div>
-  )
-}
+    <main>
+      <SolutionsPage />
+    </main>
+  );
+};
 
-export default SolutionsPage
+export default Solutions;

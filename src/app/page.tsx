@@ -2,7 +2,6 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card } from "@/components/ui/card"
 import { Settings, Building2, Users } from "lucide-react"
-import Footer from "@/components/ui/footer"
 export default function Page() {
   return (
     <main className="min-h-screen bg-[#b7e1f1]">

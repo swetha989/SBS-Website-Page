@@ -29,8 +29,21 @@ const navItems: NavItem[] = [
   { name: 'Services', href: '/services' },
   { name: 'Solutions', href: '/solutions' },
   { name: 'Contact Us', href: '/contact' },
+  { 
+    name: 'All', 
+    href: '/All',
+    dropdown: [
+      { name: 'Customers & Partners', href: '/all/Customers & Partners' },
+      { name: 'Clients', href: '/all/Clients' },
+      { name: 'Partners', href: '/all/Partners' },
+      { name: 'Press Releases', href: '/all/Press Releases' },
+      { name: 'Events', href: '/all/Events' },
+      { name: 'Past Webinars', href: '/all/Past Webinars' },
+      { name: 'Upcoming Webinars', href: '/all/Upcoming Webinars' },
+      { name: 'Upcoming Events', href: '/all/Upcoming Events' },
+    ]
+  },
 ]
-
 const Navbar = () => {  
   const [isOpen, setIsOpen] = useState(false)
 
