@@ -25,7 +25,7 @@ const SolutionsPage: React.FC = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {solutions.map((solution, index) => (
           <div key={index} className="solution-item flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md">
-            <Image src={solution.image} alt={solution.title} width={100} height={100} className="mb-4 rounded-full" />
+            <Image src={solution.image} alt={solution.title} width={50} height={50} className="mb-4 rounded-full" />
             <h3 className="text-lg font-medium">{solution.title}</h3>
           </div>
         ))}
@@ -35,4 +35,3 @@ const SolutionsPage: React.FC = () => {
 };
 
 export default SolutionsPage;
-
