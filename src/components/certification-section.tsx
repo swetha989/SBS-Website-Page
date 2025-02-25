@@ -1,5 +1,7 @@
 import Image from "next/image"
 import * as motion from "motion/react-client"
+import { ShineBorder } from "./magicui/shine-border"
+import { BorderBeam } from "./magicui/border-beam"
 
 const certifications = [
   {
@@ -34,6 +36,7 @@ export default function CertificationSection() {
               className="object-contain"
             />
           </div>
+          <BorderBeam />
         </motion.div>
       ))}
     </div>

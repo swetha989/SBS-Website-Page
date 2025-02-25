@@ -1,5 +1,6 @@
 import Image from "next/image"
 import * as motion from "motion/react-client"
+import { BorderBeam } from "./magicui/border-beam"
 
 const clients = [
   {
@@ -86,10 +87,10 @@ export default function ClientGrid() {
                 />
               </div>
             </div>
+          <BorderBeam duration={5} size={100}/>
           </div>
         </motion.div>
       ))}
     </div>
   )
 }
-

@@ -218,9 +218,9 @@ function LeadershipCard({
   description: string
 }) {
   return (
-    <Card className="overflow-hidden bg-zinc-800 text-white">
+    <Card className="overflow-hidden bg-zinc-800 text-white items-center">
       <div className="relative aspect-[4/3] px-[10px]">
-        <Image src={image || "/placeholder.svg"} alt={name} width={400} height={200} className="object-cover items-center" />
+        <Image src={image || "/placeholder.svg"} alt={name} width={400} height={200} className="object-fill items-center" />
       </div>
       <div className="p-4 space-y-2">
         <div className="bg-[#f8fff8] text-zinc-800 py-1 px-3 rounded text-center">

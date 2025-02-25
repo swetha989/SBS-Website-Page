@@ -1,0 +1,58 @@
+const products = [
+  {
+    id: "mdslite",
+    name: "MDSLite",
+    
+    description: "Professional grade laptop for creators and developers",
+    features: ["16-inch Retina Display", "32GB RAM", "1TB SSD", "12-hour battery life"],
+    image: "/products/mdslite.png",
+  },
+  {
+    id: "flexmobex",
+    name: "FLEXMOBEX",
+    
+    description: "Latest generation smartphone with advanced camera system",
+    features: ["6.7-inch OLED", "5G capable", "256GB Storage", "Triple camera"],
+    image: "/products/flexmobex.png",
+  },
+  {
+    id: "itech",
+    name: "ITECH MOBILE",
+   
+    description: "Versatile tablet for work and entertainment",
+    features: ["11-inch display", "Apple Pencil support", "256GB Storage", "All-day battery"],
+    image: "/products/itech.png",
+  },
+  {
+    id: "flexpod",
+    name: "FlexPod",
+    
+    description: "Advanced fitness and health tracking smartwatch",
+    features: ["Always-on display", "Heart rate monitor", "GPS", "Water resistant"],
+    image: "/products/flexpod.png",
+  },
+  {
+    id: "flexutility",
+    name: "FlexUtility",
+    
+    description: "Premium wireless earbuds with noise cancellation",
+    features: ["Active noise cancellation", "30-hour battery", "Water resistant", "Wireless charging"],
+    image: "/products/flexutility.png",
+  },
+  {
+    id: "transport",
+    name: "Transport Migration Utility",
+    
+    description: "High-fidelity smart speaker with voice control",
+    features: ["360° sound", "Voice assistant", "Multi-room audio", "WiFi + Bluetooth"],
+    image: "/products/transport.png",
+  },
+  {
+    id: "estate",
+    name: "Real estate management integration",
+    
+    description: "High-fidelity smart speaker with voice control",
+    features: ["360° sound", "Voice assistant", "Multi-room audio", "WiFi + Bluetooth"],
+    image: "/products/estate.png",
+  },
+]
