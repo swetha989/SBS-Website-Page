@@ -12,7 +12,7 @@ export default function ServicesPage() {
             </h1>
             <div className="space-y-4 text-gray-700">
               <p>
-                SBS has vast experience in supporting the complete suite of applications on a "follow the sun" model
+                SBS has vast experience in supporting the complete suite of applications on a &quot;follow the sun" model
                 with resources in many countries spanning several continents.
                 We have in depth experience in managing the complex range of services and programs of over 140
                 enterprise wide business with varied technologies.
