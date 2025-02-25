@@ -33,7 +33,7 @@ const navItems: NavItem[] = [
     name: 'All', 
     href: '/All',
     dropdown: [
-      { name: 'Customers & Partners', href: '/all/Customers & Partners' },
+      { name: 'Customers', href: '/all/Customers' },
       { name: 'Clients', href: '/all/Clients' },
       { name: 'Partners', href: '/all/Partners' },
       { name: 'Press Releases', href: '/all/Press Releases' },
