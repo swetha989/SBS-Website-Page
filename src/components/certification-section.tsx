@@ -1,17 +1,18 @@
 import Image from "next/image"
+import * as motion from "motion/react-client"
 
 const certifications = [
   {
     name: "National Minority Supplier Development Council",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/certs/nmsdc.png",
   },
   {
     name: "Women's Business Enterprise",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/certs/wbe.png",
   },
   {
     name: "HUB Program",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/certs/hub.png",
   },
 ]
 
@@ -19,9 +20,11 @@ export default function CertificationSection() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
       {certifications.map((cert, index) => (
-        <div
+        <motion.div
           key={index}
-          className="bg-white rounded-lg shadow-md p-6 transition-transform duration-300 hover:transform hover:scale-105"
+          className="bg-white rounded-lg shadow-md p-6"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
           <div className="relative h-40">
             <Image
@@ -31,7 +34,7 @@ export default function CertificationSection() {
               className="object-contain"
             />
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   )
