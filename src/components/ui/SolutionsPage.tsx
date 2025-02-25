@@ -22,11 +22,11 @@ const SolutionsPage: React.FC = () => {
   return (
     <div className="solutions-container py-12">
       <h2 className="text-3xl font-bold text-center mb-12"></h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {solutions.map((solution, index) => (
-          <div key={index} className="solution-item flex flex-col items-center text-center p-4 bg-white rounded-lg shadow-md">
-            <Image src={solution.image} alt={solution.title} width={100} height={100} className="mb-4 rounded-full" />
-            <h3 className="text-lg font-medium">{solution.title}</h3>
+          <div key={index} className="solution-item flex flex-col items-center text-center p-4 bg-white rounded-lg ">
+            <Image src={solution.image} alt={solution.title} width={150} height={150} className="mb-4 rounded-full" />
+            <h3 className="text-sm font-medium">{solution.title}</h3>
           </div>
         ))}
       </div>
