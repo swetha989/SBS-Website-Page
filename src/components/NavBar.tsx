@@ -33,14 +33,14 @@ const navItems: NavItem[] = [
     name: 'All', 
     href: '/All',
     dropdown: [
-      { name: 'Customers & Partners', href: '/all/Customers & Partners' },
-      { name: 'Clients', href: '/all/Clients' },
-      { name: 'Partners', href: '/all/Partners' },
-      { name: 'Press Releases', href: '/all/Press Releases' },
-      { name: 'Events', href: '/all/Events' },
-      { name: 'Past Webinars', href: '/all/Past Webinars' },
-      { name: 'Upcoming Webinars', href: '/all/Upcoming Webinars' },
-      { name: 'Upcoming Events', href: '/all/Upcoming Events' },
+      { name: 'Customers & Partners', href: '/clients' },
+      { name: 'Partners', href: '/clients#partners' },
+      { name: 'Certifications', href: '/clients#certs' },
+      { name: 'Press Releases', href: '/press-releases' },
+      { name: 'Events', href: '/events' },
+      { name: 'Past Webinars', href: '/webinars' },
+      { name: 'Upcoming Webinars', href: '/upcoming-webinars' },
+      { name: 'Upcoming Events', href: '/upcoming-events' },
     ]
   },
 ]
@@ -48,12 +48,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-[#69a8e4] shadow-md w-full">
-    <div className="max-w-7xl px-4 py-2 sm:px-6 lg:px-8">
+    <nav className="bg-[#69a8e4] shadow-md">
+    <div className="max-w-7xl  px-4 py-2 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between h-16">
         <div className="flex items-center">
             <div className="flex-shrink-0">
-              <Link href="/" className="text-2xl font-bold text-gray-800"><Image src="/sbs-logo.jpg" width={73} height={73} alt="SBS" objectFit='cover' /></Link>
+              <Link href="/" className="text-2xl font-bold text-gray-800"><Image src="/sbs-logo.jpg" width={73} height={73} alt="SBS" className='object-cover' /></Link>
             </div>
             <div className="items-center justify-center w-full hidden md:flex">
               <div className="ml-10 flex items-baseline space-x-4">
@@ -65,7 +65,7 @@ const Navbar = () => {
                       </DropdownMenuTrigger>
                       <DropdownMenuContent>
                         {item.dropdown.map((subItem) => (
-                          <DropdownMenuItem key={subItem.name}>
+                          <DropdownMenuItem key={subItem.name} >
                             <Link href={subItem.href} className="w-full">
                               {subItem.name}
                             </Link>
@@ -102,10 +102,10 @@ const Navbar = () => {
       </div>
       {isOpen && (
         <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <select className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             {navItems.map((item) => (
               item.dropdown ? (
-                <div key={item.name} className="space-y-1">
+                <option key={item.name} className="space-y-1">
                   <div className="text-gray-600 px-3 py-2 rounded-md text-base font-medium">
                     {item.name}
                   </div>
@@ -119,7 +119,7 @@ const Navbar = () => {
                       {subItem.name}
                     </Link>
                   ))}
-                </div>
+                </option>
               ) : (
                 <Link
                   key={item.name}
@@ -132,7 +132,7 @@ const Navbar = () => {
               )
             ))}
             {/* <Button className="w-full mt-4">Contact</Button> */}
-          </div>
+          </select>
         </div>
       )}
     </nav>

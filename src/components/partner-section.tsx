@@ -1,21 +1,22 @@
+import * as motion from "motion/react-client"
 import Image from "next/image"
 
 const partners = [
   {
     name: "Value Solutions Partner",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/partners/dassault.png",
   },
   {
     name: "USA Engineering",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/partners/usa-engg.png",
   },
   {
     name: "Persistent",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/partners/persistent.png",
   },
   {
     name: "SAP",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/partners/sap.png",
   },
 ]
 
@@ -23,9 +24,11 @@ export default function PartnerSection() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       {partners.map((partner, index) => (
-        <div
+        <motion.div
           key={index}
-          className="relative p-4 border border-dashed border-gray-300 rounded-lg transition-transform duration-300 hover:transform hover:scale-105"
+          className="relative p-4 border border-dashed border-gray-300 rounded-lg"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}
         >
           <div className="relative h-32">
             <Image
@@ -35,7 +38,7 @@ export default function PartnerSection() {
               className="object-contain"
             />
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   )

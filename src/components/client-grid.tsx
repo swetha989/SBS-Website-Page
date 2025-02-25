@@ -1,69 +1,70 @@
 import Image from "next/image"
+import * as motion from "motion/react-client"
 
 const clients = [
   {
     name: "Bio Rad",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/bio-rad.png",
   },
   {
     name: "Metropolitan",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/metropolitan.png",
   },
   {
     name: "WD",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/western-digital.png",
   },
   {
     name: "Boeing",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/boeing.png",
   },
   {
     name: "Unilever",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/unilever.png",
   },
   {
     name: "AMD",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/amd.png",
   },
   {
     name: "Applied Materials",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/applied-materials.png",
   },
   {
     name: "Tesla",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/tesla.png",
   },
   {
     name: "Leeyo",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/leeyo.png",
   },
   {
     name: "Motorola",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/motorola.png",
   },
   {
     name: "Office Max",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/officemax.png",
   },
   {
     name: "Stryker",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/stryker.png",
   },
   {
     name: "Roche",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/roche.png",
   },
   {
     name: "Shane Co",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/shane.png",
   },
   {
     name: "SMUD",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/smud.png",
   },
   {
     name: "Shell",
-    logo: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-lsPMT8sXLnDUgxD6BswTsZkxhIy9UP.png",
+    logo: "/clients/shell.png",
   },
 ]
 
@@ -71,8 +72,10 @@ export default function ClientGrid() {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
       {clients.map((client, index) => (
-        <div key={index} className="transform perspective-1000 group">
-          <div className="relative h-32 bg-black transform skew-x-[-20deg] transition-transform duration-300 group-hover:scale-105">
+        <motion.div key={index} className="transform perspective-1000 group"
+        whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.95 }}>
+          <div className="relative h-32 shadow-xl rounded-xl transform skew-x-[-20deg]">
             <div className="absolute inset-0 flex items-center justify-center transform skew-x-[20deg]">
               <div className="w-24 h-24 relative">
                 <Image
@@ -84,7 +87,7 @@ export default function ClientGrid() {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       ))}
     </div>
   )
