@@ -45,36 +45,38 @@ const products = [
 export default function ProductComponent() {
   return (
     <Tabs defaultValue="mdslite">
-      <TabsList className=" h-fit text-black flex justify-center">
+      <TabsList className=" h-fit text-black bg-[#b7e1f1] flex justify-center gap-8 items-center">
         {products.map((product) => (
           <TabsTrigger
             key={product.id}
             value={product.id}
             className="flex items-center space-x-2 px-4 py-2 text-white"
           >
-            <Image
-              src={product.image}
-              alt={product.name}
-              width={50}
-              height={50}
-            />
-            <span>{product.name}</span>
+            <div className="grid grid-cols-1">
+              <Image
+                src={product.image}
+                alt={product.name}
+                width={50}
+                height={50}
+              />
+            </div>
           </TabsTrigger>
         ))}
       </TabsList>
 
-      <TabsContent value="mdslite" className="space-y-4 mt-6">
-        <div className="grid md:grid-cols-2 gap-8 text-xl">
+      <TabsContent value="mdslite" className="space-y-4 mt-6 ml-5 text-gray-700">
+        <div className="grid md:grid-cols-2 gap-8 text-lg">
           <div>
             <Image
               src="/products/mds/ichi.png"
               alt="image here"
               width={600}
               height={600}
-            ></Image>
+              className="mx-auto"
+            />
           </div>
           <div className="space-y-4">
-            <p className="text-xl">
+            <p className="">
               As global opportunities expand and adoption of the “Any Product,
               Any Plant” manufacturing strategy increases, winning in today’s
               globally competitive marketplace requires partnering with a proven
@@ -83,26 +85,37 @@ export default function ProductComponent() {
               manufacturers delivers visibility and control across your
               enterprise manufacturing operations and supply chain, helping you
               drive global best practice and continuous improvement while
-              maximizing asset utilization: • Easily adaptable to the specific
-              requirements of different industrial processes •The highly
+              maximizing asset utilization:
+            </p>
+              <ul style={{ listStyleType: "disc" }}>
+                <li>Easily adaptable to the specific
+              requirements of different industrial processes. </li>
+                <li>The highly
               scalable platform delivers powerful capabilities and enables
               manufacturers to combine production efficiency with production
               quality and production visibility to optimize their processes and
-              significantly reduce their time-to-market. •MES capabilities and
+              significantly reduce their time-to-market. </li>
+                <li>MES capabilities and
               out-of-the-box features designed to support the unique processes
               and requirements of sectors executing sequential discrete
               manufacturing functions in order to produce the desired product,
               particularly: Complex Assembly Manufacturing (high complexity, low
               volume) Job Shop Manufacturing (high complexity, low volume)
               Automated Repetitive Manufacturing (configurable products, high
-              volume) The MDSLite solution addresses 80% of today’s
-              manufacturing challenges at 20% cost with an implementation via
-              agile from Start to Run in 8 weeks • The solution helps to reduce
+              volume)</li>
+                </ul>
+              <p>
+                The MDSLite solution addresses 80% of today’s
+                manufacturing challenges at 20% cost with an implementation via
+                agile from Start to Run in 8 weeks
+              </p>
+              <ul style={{ listStyleType: "disc" }}>
+                <li> The solution helps to reduce
               costs and achieve the highest quality products while making
               compliance a by-product of excellent manufacturing processes
               Accelerate Innovation in the manufacturing domain with SBS’S
-              MDSLite solution!
-            </p>
+              MDSLite solution!</li>
+              </ul>
           </div>
           <div>
             <Image
@@ -110,6 +123,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div>
@@ -136,6 +150,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div>
@@ -164,6 +179,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div className="space-y-4">
@@ -187,6 +203,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div>
@@ -206,6 +223,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div>
@@ -229,6 +247,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div className="space-y-4">
@@ -252,6 +271,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div>
@@ -271,6 +291,7 @@ export default function ProductComponent() {
               alt="image here"
               width={600}
               height={600}
+              className="mx-auto"
             ></Image>
           </div>
           <div>

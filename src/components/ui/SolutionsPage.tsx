@@ -24,8 +24,8 @@ const SolutionsPage: React.FC = () => {
       <h2 className="text-3xl font-bold text-center mb-12"></h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {solutions.map((solution, index) => (
-          <div key={index} className="solution-item flex flex-col items-center text-center p-4 bg-white rounded-lg ">
-            <Image src={solution.image} alt={solution.title} width={150} height={150} className="mb-4 rounded-full" />
+          <div key={index} className="solution-item flex flex-col items-center text-center p-4 bg-[#b7e1f1] rounded-lg ">
+            <Image src={solution.image} alt={solution.title} width={300} height={300} className="mb-4 rounded-full" />
             <h3 className="text-sm font-medium">{solution.title}</h3>
           </div>
         ))}
