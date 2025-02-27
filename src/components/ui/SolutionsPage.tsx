@@ -11,7 +11,7 @@ const solutions: Solution[] = [
   { title: 'Manufacturing Execution Systems', image: '/solution2.png' },
   { title: 'Product Development Management', image: '/product.png' },
   { title: 'Advanced Manufacturing', image: '/solution3.png' },
-  { title: 'SAP Integration Solutions', image: '/sap.png' },
+  { title: 'SAP Integration Solutions', image: '/sapimage.png' },
   { title: 'Cloud Deployement Solutions', image: '/solution4.png' },
   { title: 'Data Analytics', image: '/analytics.png' },
   { title: 'Finance Analytics', image: '/solution5.png' },
