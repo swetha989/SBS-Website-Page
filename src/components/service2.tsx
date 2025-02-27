@@ -17,6 +17,16 @@ export default function ServicesPage2() {
               <p>
               The key technologies that our consultants work with are..
               </p>
+              <div className="flex space-x-4">
+                <Image src="/sap.png" alt="sap" width={60} height={50} className="rounded-full" />
+                <Image src="/java.png" alt="java" width={60} height={50} className="rounded-full" />
+                <Image src="/hadoop.png" alt="hadoop" width={60} height={50} className="rounded-full" />
+                <Image src="/nt.png" alt="nt" width={50} height={60} className="rounded-full" />
+                <Image src="/etl.png" alt="etl" width={60} height={50} className="rounded-full" />
+                <Image src="/data warehouse.png" alt="data warehouse" width={60} height={50} className="rounded-full" />
+                <Image src="/data admin.png" alt="data admin" width={80} height={80} className="rounded-full" />
+                <Image src="/delmia.png" alt="delmia" width={80} height={80} className="rounded-full" />
+              </div>
             </div>
             <button className="px-8 py-2 border-2 border-gray-800 text-gray-800 rounded hover:bg-gray-800 hover:text-white transition-colors">
               Explore
