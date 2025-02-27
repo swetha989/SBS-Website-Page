@@ -7,14 +7,14 @@ interface Solution {
 }
 
 const solutions: Solution[] = [
-  { title: 'Factory of the Future', image: '/solution1.png' },
-  { title: 'Manufacturing Operations Management', image: '/solution2.png' },
-  { title: 'Product Lifecycle Management', image: '/product.png' },
-  { title: 'Digital Manufacturing', image: '/solution3.png' },
-  { title: 'SAP Implement Integration Services', image: '/sap.png' },
-  { title: 'Cloud Enablement Migration', image: '/solution4.png' },
-  { title: 'Analytics', image: '/analytics.png' },
-  { title: 'Intelligence Finance', image: '/solution5.png' },
+  { title: 'Smart Factory', image: '/solution1.png' },
+  { title: 'Manufacturing Execution Systems', image: '/solution2.png' },
+  { title: 'Product Development Management', image: '/product.png' },
+  { title: 'Advanced Manufacturing', image: '/solution3.png' },
+  { title: 'SAP Integration Solutions', image: '/sap.png' },
+  { title: 'Cloud Deployement Solutions', image: '/solution4.png' },
+  { title: 'Data Analytics', image: '/analytics.png' },
+  { title: 'Finance Analytics', image: '/solution5.png' },
   { title: 'IOT Big Data', image: '/solution6.png' },
 ];
 
