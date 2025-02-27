@@ -184,18 +184,16 @@ export default function ProductComponent() {
           </div>
           <div className="space-y-4">
             <p className="text-xl">
-              Our mission? To deliver exceptional cybersecurity education,
-              combining hands-on training with expert knowledge. Whether
-              you&apos;re starting from scratch or refining your skills, we
-              prepare you to defend networks, applications, and organizations
-              against the most advanced cyber threats. Regardless of their
-              background, we ensure every student masters essential concepts
-              with ease. Unlike traditional theory-heavy approaches, our focus
-              is on practical, hands-on training using industry-relevant tools
-              and evolving techniques. Our mission is to empower students with
-              the skills and confidence needed to excel in the ever-changing
-              world of cybersecurity.
+            FlexMobEx offers responsive layouts for any screen, ultra-sharp visuals, and fast, customizable performance for any device.
             </p>
+            <br />
+            <p className="text-xl">Key Capabilities: </p>
+            <ul style={{ listStyleType: "disc" }}>
+              <li>Responsive layouts for any screen</li>
+              <li>Ultra-sharp visuals</li>
+              <li>Fast performance for any device</li>
+              <li>Customizable features to suit user needs</li>
+            </ul>
           </div>
           <div>
             <Image
@@ -208,14 +206,26 @@ export default function ProductComponent() {
           </div>
           <div>
             <p>
-              At Hackersdemy, we empower you to achieve the tech career you
-              deserve with top-tier certifications, courses, and expert
-              knowledge by providing immersive training with industry-standard
-              applications ensuring real-world relevance. Our courses in Ethical
-              Hacking, Advanced Penetration Testing, Cyber Forensics and SOC
-              Analysis are designed to prepare you for the ever-evolving
-              cybersecurity challenges across all domains.{" "}
+            Supports Symbol MC70/MC75, Intermec 741, or any Windows CE device with Symbol, Intermec, or Naurtech browsers. OS supported: Windows Mobile 5.0, Windows CE 5.0.
             </p>
+            <p className="text-xl">Key Capabilities: </p>
+            <ul style={{ listStyleType: "disc" }}>
+              <li>Device & OS Support</li>
+              <li>
+                <ul style={{ listStyleType: "circle" }}>
+                  <li>Supports Symbol MC70/MC75</li>
+                  <li>Supports Intermec 741</li>
+                  <li>Compatible with any Windows CE device with:</li>
+                  <li>
+                    <ul style={{ listStyleType: "square" }}>
+                      <li>Symbol browsers</li>
+                      <li>Intermec browsers</li>
+                      <li>Naurtech browsers</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
           <div>
             <Image
@@ -227,14 +237,44 @@ export default function ProductComponent() {
             ></Image>
           </div>
           <div>
-            <p>
-              As cyber threats become increasingly sophisticated, there is a
-              growing demand for skilled professionals to protect organizations
-              from potential attacks. At Hackersdemy, we provide courses that
-              give you industry-ready skills, helping you to level up your
-              cybersecurity knowledge and open the doors to a wide range of job
-              opportunities within the ever-evolving world of cybersecurity.
+            <p className="text-xl">
+            Requires SAP NetWeaver 7.0/4.0 with mobile device compatibility using SAP Console, ITS Mobile, Web Citrix, and SAP Mobile Infrastructure.
             </p>
+            <p className="text-xl">Key Capabilities: </p>
+            <ul style={{ listStyleType: "disc" }}>
+              <li>Compatibility with SAP NetWeaver 7.0/4.0</li>
+              <li>
+                <ul style={{ listStyleType: "circle" }}>
+                  <li>Mobile device compatibility</li>
+                  <li>Support for SAP Console</li>
+                  <li>Support for ITS Mobile</li>
+                  <li>Support for Web Citrix</li>
+                  <li>Support for SAP Mobile Infrastructure</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <Image
+              src="/placeholder.jpg"
+              alt="image here"
+              width={600}
+              height={600}
+              className="mx-auto"
+            ></Image>
+          </div>
+          <div>
+            <p className="text-xl">
+            FlexMobEx enhances productivity, ensuring 100% data accuracy and fast, reliable real-time data transfer for SAP and non-SAP mobile transactions. It integrates existing solutions, maintaining IT investments while optimizing the value chain.
+            </p>
+            <p className="text-xl">Key Capabilities: </p>
+            <ul style={{ listStyleType: "disc" }}>
+              <li>Enhanced productivity</li>
+              <li>100% data accuracy</li>
+              <li>Fast, reliable real-time data transfer</li>
+              <li>Integration with existing solutions</li>
+              <li>Optimization of the value chain</li>
+            </ul>
           </div>
         </div>
       </TabsContent>

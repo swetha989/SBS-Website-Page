@@ -1,36 +1,27 @@
 import React from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
+import { FocusCards } from './focus-cards';
 
-interface Solution {
+interface Card {
   title: string;
-  image: string;
+  src: string;
 }
 
-const solutions: Solution[] = [
-  { title: 'Smart Factory', image: '/solution1.png' },
-  { title: 'Manufacturing Execution Systems', image: '/solution2.png' },
-  { title: 'Product Development Management', image: '/product.png' },
-  { title: 'Advanced Manufacturing', image: '/solution3.png' },
-  { title: 'SAP Integration Solutions', image: '/sapimage.png' },
-  { title: 'Cloud Deployement Solutions', image: '/solution4.png' },
-  { title: 'Data Analytics', image: '/analytics.png' },
-  { title: 'Finance Analytics', image: '/solution5.png' },
-  { title: 'IOT Big Data', image: '/solution6.png' },
+const solutions: Card[]= [
+  { title: 'Factory of the Future', src: '/solution1.png' },
+  { title: 'Manufacturing Operations Management', src: '/solution2.png' },
+  { title: 'Product Lifecycle Management', src: '/product.png' },
+  { title: 'Digital Manufacturing', src: '/solution3.png' },
+  { title: 'SAP Implement Integration Services', src: '/sap.png' },
+  { title: 'Cloud Enablement Migration', src: '/solution4.png' },
+  { title: 'Analytics', src: '/analytics.png' },
+  { title: 'Intelligence Finance', src: '/solution5.png' },
+  { title: 'IOT Big Data',src: '/solution6.png' },
 ];
 
 const SolutionsPage: React.FC = () => {
   return (
-    <div className="solutions-container py-12">
-      <h2 className="text-3xl font-bold text-center mb-12"></h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {solutions.map((solution, index) => (
-          <div key={index} className="solution-item flex flex-col items-center text-center p-4 bg-[#b7e1f1] rounded-lg ">
-            <Image src={solution.image} alt={solution.title} width={300} height={300} className="mb-4 rounded-full" />
-            <h3 className="text-sm font-medium">{solution.title}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
+    <FocusCards cards={solutions} />
   );
 };
 
